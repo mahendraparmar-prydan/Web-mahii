@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/con_website.css">
+
+    <!-- --------------------google font----------------------------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+
+    <!-- font asesome icon cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap 4 cdn link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- JQuery cdn link -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+    <title>consultancy website</title>
+
+    <script>
+
+
+// <---------------------------show password js---------------------------->
+    function myFunction() {
+
+    var x = document.getElementById("myInput");
+
+    if (x.type === "password") {
+        x.type = "text";
+        } else {
+        x.type = "password";
+        }
+    }
+
+
+
+    // ---------------------login validation js---------------------------->
+
+        // var input = document.getElementById("myInput");
+
+        input.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("myBtn").click();
+            }
+        });
+
+
+        //<---------------------------dropdown manu animation js---------------------->
+
+        // $(document).ready(function () {
+        // $('.navbar .dmenu').hover(function () {
+        //     $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+        //     }, function () {
+        //     $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
+        //     });
+        // });
+
+
+    </script>
+</head>
+    <body>
+            <div class="bgimg">
+
+                <nav class="navbar navbar-expand-md bg-transparent  navbar-dark ">
+
+                    <div class="container">
+
+                        <a class="navbar-brand text-warning font-weight-bold" href=""> P R Y D A N</a> 
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colnavbar">
+                            
+                            <span class="navbar-toggler-icon"></span>
+
+                        </button> 
+
+                        <div class="collapse navbar-collapse text-center" id="colnavbar">
+
+                            <ul class="navbar-nav ml-auto">                                     
+
+                                <li class="nav-item"><a class="nav-link text-white" href=""> Services</a></li>
+                                
+                                <li class="nav-item"><a class="nav-link text-white" href="">Portfolio</a></li>
+
+                                <li class="nav-item dropdown dmenu"><a class="nav-link text-white dropdown-toggle"
+                                    data-toggle="dropdown" href=""> About us</a>
+                                    
+                                    <div class="dropdown-menu sm-menu bg-transparent">
+
+                                        <a class="dropdown-item text-white text-center bg-transparent" href="#"><i class="fa fa-id-card text-warning"></i> Profile</a>
+
+                                        <!-- <a class="dropdown-item text-white text-center bg-transparent" href="#"><i class="fa fa-shopping-cart"></i>service</a> -->
+
+                                        <a class="dropdown-item text-white text-center bg-transparent" href="#"><i class="fa fa-code text-warning"></i> coder's</a>
+                                        
+                                        <a class="dropdown-item text-white text-center bg-transparent" href="#"><i class="fa fa-laptop text-warning"></i> developer's</a>
+
+                                        <a class="dropdown-item text-white text-center bg-transparent" href="#"><i class="fa fa-users text-warning"></i> Our team</a>
+
+                                        <a class="dropdown-item text-white text-center bg-transparent" href="#"><i class="fa fa-user text-warning"></i> Company</a>
+
+                                      </div>
+
+                                </li>
+
+                                <li class="nav-item"><a class="nav-link text-white" href="">Contact</a></li>
+
+                            </ul>
+
+                        </div>  
+
+                    </div>
+
+                </nav>
+             
+                <div class="container text-center text-white headerset">
+
+                    <h2>Welcome To Our Studio</h2>
+
+                    <h1>Nice To Meet You</h1>
+
+                    <button class="btn btn-outline-warning text-white btn-lg"  data-target="#mymodal" data-toggle="modal">Continue</button>
+
+                    <div class="modal fade" id="mymodal">
+
+                        <div class="modal-dialog">
+                            
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+
+                                    <h4 class="modal-title text-center w-100  font-weight-bold text-warning">loin Here</h4>
+
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+            
+                                </div>
+
+                                <!-- <div class="modal-header text-center">
+                                    <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div> -->
+
+                                
+            
+                                <div class="modal-body">
+
+                                    <form action="" class="was-validated">
+
+                                        <div class="form-group">
+
+                                            <label for="name">User Nme</label>
+
+                                            <input type="text" placeholder="User Name" name="name" class="form-control" required>
+
+                                            <!-- <div class="valid-feedback">Valid.</div> -->
+                                            <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+
+                                        </div>
+
+
+                                        <div class="form-group">
+
+                                            <label for="">password</label>
+
+                                            <input type="password" name=" password" id="myInput"  placeholder="Password" class="form-control" required>
+
+                                            <br>
+
+                                            <input type="checkbox" style="float: left;" onclick="myFunction()">
+
+                                            <label for="checkbox" class="text-dark" style="float: left; margin-top: -8px; padding-left: 5px;"> show password</label>
+
+                                            <!-- <div class="valid-feedback">Valid.</div> -->
+                                            <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+
+                                        </div>
+
+                                    </form>
+                                   
+                                </div>
+            
+                                <div class="modal-footer justify-content-center">
+                                    
+                                    <button class="btn btn-outline-warning" type="submit" id="myBtn" onclick="javascript:alert('login successful!')"> login</button>
+                                    
+                                    <button class="btn btn-danger" data-dismiss="modal">close</button>
+                                </div>
+            
+                            </div>
+            
+                        </div>
+            
+                    </div>
+            
+                   </div>
+                    
+                </div>
+            </div>
+
+            <!-- --------------------------------servies----------------------------------------- -->
+
+            <section class="container servies text-center">
+
+                <h1>SERVICES</h1>
+
+                <P>Lorem ipsum dolor sit amet consectetur</P>
+
+                <div class="row rowsetting">
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto serviesbox">
+
+                        <div class="imgstn d-block m-auto bg-warning">
+
+                            <i class="fa fa-shopping-cart fa-3x text-white" aria-hidden="true"></i>
+
+                        </div>
+
+                        <h2>E-commerce</h2>
+
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellat, eos illum facilis fugiat vel voluptatem  </p>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto serviesbox">
+
+                        <div class="imgstn d-block m-auto bg-warning">
+
+                            <i class="fa fa-desktop fa-3x text-white" aria-hidden="true"></i>
+
+                        </div>
+
+                        <h2>Responsive Design</h2>
+
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellat, eos illum facilis fugiat vel voluptatem  </p>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto serviesbox">
+
+                        <div class="imgstn d-block m-auto bg-warning">
+
+                            <i class="fa fa-lock fa-3x text-white" aria-hidden="true"></i>
+
+                        </div>
+
+                        <h2>Web Security</h2>
+
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellat, eos illum facilis fugiat vel voluptatem  </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- --------------------------portfolio----------------------------------- -->
+
+            <section class="portfolio bg-light">
+
+                <div class="container text-center">
+
+                    <h1>PORTFOLIO</h1>
+
+                    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</P>
+
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+
+                            <div class="card">
+                                
+                                <img src="../img/leon-bzqU01v-G54-unsplash.jpg" class="card-img img-fluid" alt="">
+
+                                <div class="cover">
+
+                                    <h3 class="name">Tim Cook</h3>
+
+                                    <p class="title">Android Developer</p>
+
+                                    <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+
+                                </div>
+
+
+                                <div class="card-body">
+
+                                    <h2 class="card-title">Threads</h2>
+
+                                    <p class="card-text">Illustration</p>
+
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+
+                            <div class="card">
+
+                                <img src="../img/icons8-team-yTwXpLO5HAA-unsplash.jpg" class="card-img img-fluid" alt="">
+
+                                <div class="cover">
+
+                                    <h3 class="name">Michael Clarke</h3>
+
+                                    <p class="title">Cricker</p>
+
+                                    <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+
+                                </div>
+
+                                <div class="card-body">
+
+                                    <h2 class="card-title">Explore</h2>
+
+                                    <p class="card-text">Graphic Design</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+
+                            <div class="card">
+
+                                <img src="../img/9039366285_ed995ab51c_o.jpg" class="card-img img-fluid" alt="">
+
+                                <div class="cover">
+
+                                    <h3 class="name">Carlos vento</h3>
+
+                                    <p class="title">Business Analyst</p>
+
+                                    <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+
+                                </div>
+
+                                <div class="card-body">
+
+                                    <h2 class="card-title">Finish</h2>
+
+                                    <p class="card-text">Identity</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+
+                            <div class="card">
+
+                                <img src="../img/christina-wocintechchat-com-mxOdUd1BQIM-unsplash.jpg" class="card-img img-fluid" alt="">
+
+                                <div class="card-body">
+
+                                    <h2 class="card-title">Lines</h2>
+
+                                    <p class="card-text">Branding</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+
+                            <div class="card">
+
+                                <img src="../img/sebastian-herrmann-O2o1hzDA7iE-unsplash.jpg" class="card-img img-fluid" alt="">
+
+                                <div class="card-body">
+
+                                    <h2 class="card-title">Southwest</h2>
+
+                                    <p class="card-text">Web Design</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+
+                            <div class="card">
+
+                                <img src="../img/thisisengineering-raeng-hOCYuLmTTnY-unsplash.jpg" class="card-img img-fluid" alt="">
+
+                                <div class="card-body">
+
+                                    <h2 class="card-title">Windows</h2>
+
+                                    <p class="card-text">Photography</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- --------------------------------team --------------------- -->
+
+            <section class="team">
+
+                <div class="container text-center">
+
+                    <h1>Most Telented team in the World </h1>
+
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+
+                    <div class="row teamstn">
+
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto">
+
+                            <figure class="figure">
+
+                                <img class="figure-img img-fluid rounded-circle" height="250px" width="250px" src="../img/char.png" alt="">
+
+                                <figcaption>
+
+                                    <h4>Prydan consultancy</h4>
+
+                                    <p class="figure-caption">software Engineer</p>
+
+                                </figcaption>
+
+                            </figure>
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto">
+
+                            <figure class="figure">
+
+                                <img class="figure-img img-fluid rounded-circle" height="250px" width="250px" src="../img/half.png" alt="">
+
+                                <figcaption>
+
+                                    <h4>Prydan CRM</h4>
+
+                                    <p class="figure-caption">software Engineer</p>
+
+                                </figcaption>
+
+                            </figure>
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto">
+
+                            <figure class="figure">
+
+                                <img class="figure-img img-fluid rounded-circle" height="250px" width="250px" src="../img/half2.png" alt="">
+
+                                <figcaption>
+
+                                    <h4>Prydan Work smart</h4>
+
+                                    <p class="figure-caption">software Engineer</p>
+
+                                </figcaption>
+
+                            </figure>
+
+                        </div>
+
+                    </div>  
+
+                </div>
+
+            </section>
+
+            <!-- ---------------------------footer-------------------------------------- -->
+            <!-- <footer class="footer">
+                <h6 class="text-center">copyright @ 2021, design by mahendra parmar</h6>
+            </footer> -->
+
+
+            <!-- Footer -->
+            <footer class="page-footer text-white font-small" style="background-color: #1c2331;">
+
+                                <div style="background-color: #6351ce;">
+
+                                    <div class="container">
+                
+                                        <!-- Grid row-->
+                                        <div class="row py-4 d-flex align-items-center">
+                        
+                                                <!-- Grid column -->
+                                                <div class="col-md-6 col-lg-5 text-md-left mb-4 mb-md-0">
+
+                                                    <h6 class="mb-0 text-white font-weight-bold text-center">Get connected with us on social networks!</h6>
+
+                                                </div>
+                                                <!-- Grid column -->
+                        
+                                            <!-- Grid column -->
+                                            <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        
+                                                <!-- Facebook -->
+                                                <a class="fb-ic" href="https://Facebook.com/">
+
+                                                    <i class="fa fa-facebook-f text-white mr-4"> </i>
+
+                                                </a>
+
+                                                <!-- Twitter -->
+                                                <a class="tw-ic" href="https://Twitter.com/">
+
+                                                    <i class="fa fa-twitter text-white mr-4"> </i>
+
+                                                </a>
+
+                                                <!-- Google +-->
+                                                <a class="gplus-ic" href="https://Google.com/">
+
+                                                     <i class="fa fa-google text-white mr-4"> </i>
+
+                                                </a>
+
+                                                <!--Linkedin -->
+
+                                                <a class="li-ic" href="https://Linkedin.com/">
+
+                                                    <i class="fa fa-linkedin text-white mr-4"> </i>
+
+                                                </a>
+
+                                                <!--Instagram-->
+                                                <a class="ins-ic" href="https://instagram.com/">
+
+                                                    <i class="fa fa-instagram text-white"> </i>
+
+                                                </a>
+                
+                                            </div>
+                                            <!-- Grid column -->
+                
+                                        </div>
+                                        <!-- Grid row-->
+                
+                                    </div>
+                            </div>
+                
+                    <!-- Footer Links -->
+                    <div class="container text-center text-md-left mt-5">
+                
+                    <!-- Grid row -->
+                        <div class="row mt-3">
+                
+                                <!-- Grid column -->
+                                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        
+                                <!-- Content -->
+                                <h6 class="text-uppercase text-white font-weight-bold">Company name</h6>
+
+                                <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color:  #6351ce;">
+
+                                <!-- <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipisicing elit.</p> -->
+
+                                    <a href="">
+
+                                        <img src="../img/banner-img.png" style="margin-left: -55px; " class="img-fluid img-animation" alt="">
+
+                                    </a>
+                        
+                                </div>
+                                <!-- Grid column -->
+                
+                                <!-- Grid column -->
+                            <div class="col-md-2 col-lg-2 col-xl-2  mx-auto mb-4">
+                
+                                <!-- Links -->
+                                <h6 class="text-uppercase font-weight-bold">Products</h6>
+
+                                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color:  #6351ce;">
+
+                                <p>
+                                    <a href="#!" class="text-white">Bootstrap</a>
+
+                                </p>
+
+                                <p>
+                                    <a href="#!" class="text-white">WordPress</a>
+
+                                </p>
+
+                                <p>
+                                    <a href="#!" class="text-white">BrandFlow</a>
+
+                                </p>
+
+                                <p>
+                                    <a href="#!" class="text-white">Bootstrap Angular</a>
+
+                                </p>
+                        
+                            </div>
+                            <!-- Grid column -->
+                
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                
+                                <!-- Links -->
+                                <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+
+                                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color:  #6351ce;">
+
+                                <p>
+                                    <a href="#!" class="text-white">Your Account</a>
+
+                                </p>
+
+                                <p>
+                                    <a href="#!" class="text-white">Become an Affiliate</a>
+
+                                </p>
+
+                                <p>
+                                    <a href="#!" class="text-white">Shipping Rates</a>
+
+                                </p>
+
+                                <p>
+                                    <a href="#!" class="text-white" >Help</a>
+
+                                </p>
+                
+                            </div>
+                            <!-- Grid column -->
+                
+                            <!-- Grid column -->
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                
+                                <!-- Links -->
+                                <h6 class="text-uppercase font-weight-bold">Contact</h6>
+
+                                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;background-color:  #6351ce;">
+
+                                <p>
+                                    <i class="fa fa-home mr-3"></i> A'bad , Prahlad nagar
+
+                                </p>
+
+                                <p>
+                                    <i class="fa fa-envelope mr-3"></i> info@example.com
+
+                                </p>
+
+                                <p>
+                                    <i class="fa fa-phone mr-3"></i> + 91 234 567 88
+
+                                </p>
+
+                                <p>
+                                    <i class="fa fa-print mr-3"></i> + 91 234 567 89
+                                
+                                </p>
+                        
+                            </div>
+                            <!-- Grid column -->
+                
+                        </div>
+                    <!-- Grid row -->
+                
+                    </div>
+                    <!-- Footer Links -->
+                
+                    <!-- Copyright -->
+                    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+
+                         <a href="https://prydan.com/"> Prydan.com</a>
+
+                    </div>
+                    <!-- Copyright -->
+  
+            </footer>
+             <!-- Footer -->
+
+        </body>
+</html>

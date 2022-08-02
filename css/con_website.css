@@ -1,0 +1,346 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+body{
+    font-family: 'Shippori Mincho', serif;
+}
+
+
+
+.bgimg{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/christina-wocintechchat-com-Q80LYxv_Tbs-unsplash.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 753px;
+}
+
+.headerset{
+    box-sizing: border-box;
+    padding-top: 220px;
+}
+
+.headerset h2{
+    font-size: 42px;
+}
+
+.headerset h1{
+    font-size: 75px;
+    font-weight: bold;
+}
+
+
+.nav-item{
+    padding-top: 25px;
+    padding-left:35px;
+  }
+
+.nav-item a:hover{
+    color: yellow;
+    /* background-color: teal; */
+    border-radius: 10px;
+    border-bottom: 3px solid #1d1a1a
+    /* border: 1px solid yellowgreen; */
+}
+
+
+.dropdown:hover>.dropdown-menu{
+    display: block;
+}
+
+
+  
+
+/* -------------------------------servies section --------------------- */
+
+.servies{
+    padding: 100px 0px 60px;
+    height: 753px;
+}
+
+.servies h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.serviesbox:hover{
+    border: 1px solid teal;
+    padding-top: 10px;
+    /* height: 300px; */
+    color: whitesmoke;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%)
+}
+
+.serviesbox p:hover{
+    color: whitesmoke;
+}
+
+.rowsetting{
+    margin: 100px 0px;
+}
+
+.imgstn{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.fa-shopping-cart{
+    margin-top: 25px;
+}
+
+.fa-desktop{
+    margin-top: 29px;
+}
+
+.fa-lock{
+    margin-top: 27px;
+}
+
+.rowsetting p{
+    padding: 10px;
+    color: #6c757d;
+}
+
+.rowsetting h2{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+/* --------------------------------portfolio------------------------------------------- */
+
+.portfolio{
+    height: 1100px;
+    padding: 100px 0px 50px;
+}
+
+.portfolio h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.card{
+    margin-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card:hover{
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    color: whitesmoke;
+    /* height: 400px; */
+    background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%)
+}
+
+
+.card .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 148, 255, 0.75);
+    transition: opacity 0.15s ease-in;
+    opacity: 0;
+    padding-top: 80px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15)
+}
+
+.card:hover .cover {
+    opacity: 1
+}
+
+.cover .name {
+    font-weight: bold;
+    margin-bottom: 8px
+}
+
+.cover .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #bbd8fb;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-bottom: 20px
+}
+
+.social {
+    font-size: 18px
+}
+
+.social a {
+    color: inherit;
+    margin: 0 10px;
+    display: inline-block;
+    opacity: 0.7
+}
+
+.social a:hover {
+    opacity: 1
+}
+
+/* -------------------------team----------------------- */
+
+.team{
+    height: 700px;
+    width: 100%;
+    padding: 100px 0px 60px;
+}
+
+.team h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.teamstn{
+    margin-top: 100px;
+}
+
+/* --------------------------footer--------------------- */
+
+.footer{
+    height: 50px;
+    background: #f0f1f8;
+}
+
+.footer h6{
+    line-height: 50px;
+}
+
+
+.img-animation{ animation: MoveUpDown 5s linear infinite; position: relative; }
+
+@keyframes MoveUpDown {
+
+  0%, 100% {
+
+    top: 0;
+
+  }
+
+  50% {
+
+     top: -15px;
+
+  }
+
+}
+
+
+
+
+/* ----------------------------media Query------------------ */
+
+@media screen {
+    
+}
+
+@media(min-width:992px){
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    .headerset h2{
+    
+        font-size: 35px;
+    }
+    .headerset h1{
+        font-size: 62px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: 575px) and (max-width: 767px){
+
+    .headerset h2{
+    
+        font-size: 25px;
+    }
+    .headerset h1{
+        font-size: 52px;
+        font-weight: bold;
+    }
+
+    .portfolio{
+        height: 3200px;
+        
+    }
+
+    .team{
+        height: 1300px;
+       
+    }
+}
+
+
+
+@media only screen and (min-width: 460px) and (max-width: 574px) {
+
+    .headerset h2{
+    
+        font-size: 22px;
+    }
+    .headerset h1{
+        font-size: 42px;
+        font-weight: bold;
+    }
+
+    .servies{
+        height: 1100px;
+    }
+
+    .portfolio{
+        height: 2800px;
+    }
+
+    .team{
+        height: 1300px;  
+    }
+}
+
+
+
+@media only screen and (max-width: 459px) {
+
+    .headerset h2{
+        font-size: 22px;
+    }
+    .headerset h1{
+        font-size: 42px;
+        font-weight: bold;
+    }
+
+    .servies{
+        height: 1300px;
+    }
+    .servies h1{
+        font-size: 25px;
+    }
+
+    .portfolio{
+        height: 2500px;  
+    }
+
+    .portfolio h1{
+        font-size: 25px;
+    }
+
+    .team{
+        height: 1200px; 
+    }
+
+    .team h1{
+        font-size: 25px;
+    }
+
+
+  }
+
